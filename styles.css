@@ -29,12 +29,31 @@
     font-style: italic;
     font-display: swap;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+blockquote {
+    font-family: 'Libron';
+    font-weight: 700;
+}
 
+#splashscreen-section {
+    background-image: url('P1040274.jpg');
+    background-size:  cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
 
-form {
+#signup-section {
     display:flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
+}
+
+#create_account_button {
+    background-color: #596D48;
 }
