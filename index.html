@@ -8,51 +8,44 @@
     <title>Sign-up Form</title>
 </head>
 <body>
-    <form action="https://httpbin.org/post" method="post">
-        <div>
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" placeholder="Bob..." name="first_name">
+    <div id="splashscreen-section">
+        <img src="P1040274.jpg" alt="a silly goat staring at camera" width="500px" height="auto">
+    </div>
+    <div id="signup-section">
+
+        <div id="qoute">
+            <blockquote>
+                Thisis not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                Sign up <i>now</i> to get started.
+
+                You know you want to.
+            </blockquote>
         </div>
-        <div>
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" placeholder="you@example.com" name="email">
+        <div id="form">
+            <form id="signup-form" action="https://httpbin.org/post" method="post">
+                <label for="first_name"> first name </label>
+                <input type="text" name="first_name" id="first_name" required>
+                
+                <label for="last_name"> last name </label>
+                <input type="text" name="last_name" id="last_name" required>
+                
+                <label for="email_name"> email </label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="phone"> phone number </label>
+                <input type="tel" name="phone" id="phone" required>
+
+                <label for="password"> password </label>
+                <input type="password" name="password" id="password" required autocomplete="new-password">
+
+                <label for="confirm_password"> confirm password </label>
+                <input type="password" name="confirm_password" id="confirm_password" required autocomplete="new-password">
+            </form>
         </div>
-        <div>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+        <div >
+            <button type="submit" form="signup-form">Create Account</button>
+            <p>already have an account? <a href="">Log in</a></p>
         </div>
-        <div>
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age">
-        </div>
-        <div>
-            <label for="dob">Date:</label>
-            <input type="date" id="dob" name="dob">
-        </div>
-        <div>
-            <select name="Car">
-                <option value="mercedes">Mercedes</option>
-                <option value="toyota">Toyota</option>
-            </select>
-        </div>
-        <div>
-            <fieldset>
-                <legend>Clothing</legend>
-                <select name="fashion">
-                    <optgroup label="Clothing">
-                        <option value="t_shirt">T-Shirts</option>
-                        <option value="sweater">Sweaters</option>
-                        <option value="coats">Coats</option>
-                    </optgroup>
-                    <optgroup label="Foot Wear">
-                        <option value="sneakers">Sneakers</option>
-                        <option value="boots">Boots</option>
-                        <option value="sandals">Sandals</option>
-                    </optgroup>
-                </select>
-            </fieldset>
-        </div>
-        <button type="submit">Submit</button>
-    </form>
+    </div>
 </body>
 </html>
