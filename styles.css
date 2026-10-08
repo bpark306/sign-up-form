@@ -33,11 +33,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Libron";
+    text-decoration: none;
 }
 
 blockquote {
-    font-family: 'Libron';
     font-weight: 700;
+    text-align: left;
 }
 
 #splashscreen-section {
@@ -56,4 +58,9 @@ blockquote {
 
 #create_account_button {
     background-color: #596D48;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
 }
+
