@@ -1,35 +1,3 @@
-@font-face {
-    font-family: 'Libron';
-    src: url(fonts/Libron-Regular.woff2) format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Libron';
-    src: url(fonts/Libron-Bold.woff2) format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Libron';
-    src: url(fonts/Libron-Italic.woff2) format('woff2');
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Libron';
-    src: url(fonts/Libron-BoldItalic.woff2) format('woff2');
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
-}
-
 input:user-invalid {
     border-color: red;
 }
@@ -38,59 +6,133 @@ input:user-valid {
     border-color: green;
 }
 
+input:focus {
+    border-color: blue;
+    box-shadow: 5px 5px 0px 0px #000000;
+}
 
+input {
+    border-color: #E5E7EB;
+    width: 250px;
+    height: 32px;
+    border-radius: 8px;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Libron";
     text-decoration: none;
 }
 
-p {
-    font-weight: 700;
-    text-align: left;
+body {
+    display: flex;
+    height: 100dvh;
+    overflow: hidden;
 }
 
 #splashscreen-section {
-    background-image: url('P1040274.jpg');
-    background-size:  cover;
-    background-repeat: no-repeat;
+    display: flex;
+    flex: 0 0 35%;
     width: auto;
-}
 
+    background-image: url("P1040274.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-end;
+}
 #signup-section {
+    min-width: 0;
+    min-height: 0;
+
+    flex: 1;
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    justify-content: center;
     gap: 12px;
 }
-#signup-form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.field {
-    flex: 0 0 calc((100% - 32px) / 2);
+
+#signup-form, .field{
     display: flex;
     flex-direction: column;
-
 }
+
+#signup-form {
+    gap: 12px;
+}
+
+.field {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+#banner > p {
+    padding-left: 32px;
+    padding-bottom: 16px;
+}
+
+#banner {
+    padding-bottom: 32px;
+}
+
+#footer > p {
+    padding-top: 32px;
+}
+#name_fields, #contact_info_fields, #password_fields {
+    display: flex;
+}
+
 #create_account_button {
     background-color: #596D48;
     color: white;
     border: none;
-    padding: 10px 30px;
-    border-radius: 5px;
+    padding: 12px 48px;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
-#header, #form, #completion {
-    margin-left: 50px;
-    margin-right: auto;
+#header, #footer {
+    flex: 1;
+
+    background-color: whitesmoke;
+
+    padding-top: 32px;
+    padding-right: 128px;
+    padding-bottom: 32px;
+    padding-left: 32px;
 }
 
 
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#header > *:last-child {
+    margin-top: 32px;
+}
+
+
+#footer {
+    box-shadow: inset 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+}
+label {
+    color: darkslategrey;
+    font-size: 200;
+    font-weight: 600;
+}
 a {
     color:#596D48;
+}
+#credits {
+    color: white;
+}
+
+p {
+    font-weight: bold;
+    font-size: 24px;
 }
