@@ -13,7 +13,7 @@
     </div>
     <div id="signup-section">
 
-        <div id="qoute">
+        <div id="header">
             <blockquote>
                 <p>Thisis not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
                 <p>Sign up <i>now</i> to get started.</p>
@@ -24,33 +24,33 @@
         <div id="form">
             <p>Let's do this!</p>
             <form id="signup-form" action="https://httpbin.org/post" method="post">
-                <div>
+                <div class="field">
                     <label for="first_name"> FIRST NAME </label>
                     <input type="text" name="first_name" id="first_name" required>
-                <div>
-                <div>
+                </div>
+                <div class="field">
                     <label for="last_name"> LAST NAME </label>
                     <input type="text" name="last_name" id="last_name" required>
-                 <div>
-                <div>
+                </div>
+                <div class="field">
                     <label for="email_name"> EMAIL </label>
                     <input type="email" name="email" id="email" required>
-                 <div>
-                <div>
+                </div>
+                <div class="field">
                     <label for="phone"> PHONE NUMBER </label>
                     <input type="tel" name="phone" id="phone" required>
-                 <div>
-                <div>
+                </div>
+                <div class="field">
                     <label for="password"> PASSWORD </label>
                     <input type="password" name="password" id="password" required autocomplete="new-password">
-                <div>
-                <div>
+                </div>
+                <div class="field">
                     <label for="confirm_password"> CONFIRM PASSWORD </label>
                     <input type="password" name="confirm_password" id="confirm_password" required autocomplete="new-password">
                 </div>
             </form>
         </div>
-        <div >
+        <div id="completion">
             <button id="create_account_button" type="submit" form="signup-form">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
